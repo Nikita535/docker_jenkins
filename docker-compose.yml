@@ -3,6 +3,7 @@ services:
   server:
       image: jenkins/jenkins:lts
       ports:
+        - "8080:80"
         - "50000:50000"
       volumes:
         - ./jenkins_home:/var/jenkins_home
